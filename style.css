@@ -1,0 +1,275 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+section {
+  padding: 80px 5%;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e1e1e;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  transition: 0.3s;
+  color: #ccc;
+}
+
+.nav-links li a:hover {
+  color: #1e90ff;
+}
+
+/* Hero */
+.hero {
+  background: url('images/hero-bg.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #006fd6;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ddd;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Locked Images */
+.gallery-item.locked img {
+  filter: grayscale(90%) brightness(0.7);
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Me */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-image img {
+  border-radius: 20px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* YouTube Section */
+.youtube-section {
+  text-align: center;
+}
+
+.youtube-embed {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-embed iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Stock Logos */
+.stock-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.stock-logos img {
+  width: 120px;
+  height: auto;
+  filter: grayscale(100%) brightness(0.8);
+  transition: 0.3s;
+}
+
+.stock-logos img:hover {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-list i {
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #eee;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature & Landscape Photography | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- GLightbox (Optional for later) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">📸 My Photography</div>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+        <li><a href="#stock-sites">Stock</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Capturing Earth’s Untold Stories</h1>
+      <p>Welcome to my world of breathtaking landscapes and serene nature moments.</p>
+      <a href="#gallery" class="btn-primary">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2 class="section-title">My Photo Gallery</h2>
+    <p class="section-subtitle">Free samples and licensed work for Adobe, Unsplash, Shutterstock, and more.</p>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="free">Free</button>
+      <button class="filter-btn" data-filter="locked">Locked</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <!-- Free Images -->
+      <div class="gallery-item free">
+        <a href="images/nature1.jpg" class="lightbox">
+          <img src="images/nature1.jpg" alt="Free Nature Photo">
+        </a>
+      </div>
+
+      <div class="gallery-item free">
+        <a href="images/free2.jpg" class="lightbox">
+          <img src="images/free2.jpg" alt="Free Landscape Photo">
+        </a>
+      </div>
+
+      <!-- Locked Images -->
+      <div class="gallery-item locked">
+        <a href="https://unsplash.com/photos/a-tall-waterfall-cascades-through-a-rocky-canyon-uQWd8DuvzRY" target="_blank">
+          <img src="images/paid1.jpg" alt="Locked Photo">
+          <div class="lock-overlay"><i class="fas fa-lock"></i></div>
+        </a>
+      </div>
+
+      <div class="gallery-item locked">
+        <a href="https://unsplash.com/photos/sunset-illuminates-a-snowy-mountain-landscape-Hvl4NH9mF8M" target="_blank">
+          <img src="images/paid2.jpg" alt="Locked Photo">
+          <div class="lock-overlay"><i class="fas fa-lock"></i></div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/photographer.jpg" alt="Photographer Portrait">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm a nature and landscape photographer who finds beauty in wild places and still moments. My passion is capturing the emotional and untouched parts of nature and sharing them with the world through licensed platforms and my own work.</p>
+        <p>I'm also an avid sports lover and share my excitement on YouTube — because storytelling is everywhere, whether in a forest or a football field.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Embed Section -->
+  <section id="youtube" class="youtube-section">
+    <h2>🎥 My Sports Channel</h2>
+    <p>I also create content for my YouTube sports channel in my spare time. Check it out!</p>
+    <div class="youtube-embed">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Stock Contributor Logos -->
+  <section id="stock-sites" class="stock-section">
+    <h2>Contributing Photographer On</h2>
+    <div class="stock-logos">
+      <a href="#"><img src="images/adobe-stock-logo.png" alt="Adobe Stock"></a>
+      <a href="#"><img src="images/unsplash-logo.png" alt="Unsplash"></a>
+      <a href="#"><img src="images/shutterstock-logo.png" alt="Shutterstock"></a>
+      <a href="#"><img src="images/istock-logo.png" alt="iStock"></a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>For collaborations, licensing inquiries, or just to say hello:</p>
+    <ul class="contact-list">
+      <li><i class="fas fa-envelope"></i> your.email@example.com</li>
+      <li><i class="fab fa-instagram"></i> <a href="#">@yourinsta</a></li>
+      <li><i class="fab fa-youtube"></i> <a href="#">YouTube Channel</a></li>
+      <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Photography Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional: Lightbox or JS later -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({ selector: '.lightbox' });
+</script>
+
+</body>
+</html>
